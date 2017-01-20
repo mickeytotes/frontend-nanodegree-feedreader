@@ -44,6 +44,14 @@ $(function() {
          * in the allFeeds object and ensures it has a name defined
          * and that the name is not empty.
          */
+         it('should have a name', function() {
+            for (var i = 0; i < allFeeds.length; i++) {
+                expect(allFeeds[i].name).toBeDefined();
+                //This checks if there is more than one word in name.
+                //Placeholder until I can find a more precise test.
+                expect(allFeeds[i].name).toMatch(' ');
+            }
+         });
     });
 
 

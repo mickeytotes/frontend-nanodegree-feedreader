@@ -6,6 +6,10 @@ Project 6 for Udacity's Front-End Nanodegree Program. The objective was to take 
 1. Download/clone the repo.
 2. Launch `index.html` in your browser of choice!
 
+- Jasmine's testing suites appear at the bottom of the page when loaded.
+- To edit/add testing suites, open [`spec/feedreader.js`](spec/feedreader.js). All tests available there.
+
+
 ## Technology Stack
   **This project utilizes:**
   - Javascript

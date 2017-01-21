@@ -7,7 +7,7 @@ Project 6 for Udacity's Front-End Nanodegree Program. The objective was to take 
 2. Launch `index.html` in your browser of choice!
 
 - Jasmine's testing suites appear at the bottom of the page when loaded.
-- To edit/add testing suites, open [`spec/feedreader.js`](spec/feedreader.js). All tests available there.
+- To edit/add testing suites, open [`jasmine/spec/feedreader.js`](jasmine/spec/feedreader.js). All tests available there.
 
 
 ## Technology Stack

@@ -1,6 +1,6 @@
 # RSS Feed Reader Testing Project
 
-Project 6 for Udacity's Front-End Nanodegree Program. The objective was to take a project from another developer and build a series of tests to check funtionality of various elements.
+Project 6 for Udacity's Front-End Nanodegree Program. The objective was to take a project from another developer and build a series of tests (utilizing *Jasmine*) to check funtionality of various elements.
 
 ## Installation
 1. Download/clone the repo.

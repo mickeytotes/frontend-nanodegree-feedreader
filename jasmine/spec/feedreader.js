@@ -61,10 +61,9 @@ $(function() {
         });
 
          // Make sure there is at least one .entry element.
-        it("should contain at least one entry", function(done) {
+        it("should contain at least one entry", function() {
             var $lengthOfFeeds = $(".feed .entry").length;
             expect($lengthOfFeeds).toBeGreaterThan(0);
-            done();
         });
     });
 

@@ -88,9 +88,8 @@ $(function() {
         });
 
          // Make sure feed content changes when next feed is loaded.
-        it("should change content on load of new feed", function(done) {
+        it("should change content on load of new feed", function() {
             expect($firstFeed).not.toEqual($secondFeed);
-            done();
         });
     });
 }());

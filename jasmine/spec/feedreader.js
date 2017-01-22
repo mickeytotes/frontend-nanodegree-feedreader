@@ -27,7 +27,7 @@ $(function() {
             for (var i = 0; i < allFeeds.length; i++) {
                 expect(allFeeds[i].name).toBeDefined();
                 //This checks if there is at least one space present in name.
-                expect(allFeeds[i].name).toMatch(' ');
+                expect(allFeeds[i].name).not.toBe('');
             }
          });
     });

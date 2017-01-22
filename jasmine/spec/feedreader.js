@@ -78,10 +78,10 @@ $(function() {
         beforeEach(function(done) {
             loadFeed(0, function() {
                 // get first element.
-                $firstFeed = $(".header-title").html();
+                $firstFeed = $(".feed").html();
                 loadFeed(1, function() {
                     // get second element.
-                    $secondFeed = $(".header-title").html();
+                    $secondFeed = $(".feed").html();
                     done();
                 });
             });

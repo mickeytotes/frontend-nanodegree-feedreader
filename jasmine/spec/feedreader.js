@@ -26,7 +26,6 @@ $(function() {
          it('should have a name', function() {
             for (var i = 0; i < allFeeds.length; i++) {
                 expect(allFeeds[i].name).toBeDefined();
-                //This checks if there is at least one space present in name.
                 expect(allFeeds[i].name).not.toBe('');
             }
          });
@@ -71,17 +70,26 @@ $(function() {
 
     // ************* NEW FEED SELECTION **************
     describe("New Feed Selection", function() {
+        var $firstFeed,
+            $secondFeed;
 
          // Ensure async function loads before test initiates.
+         // Call loadFeed twice, once after the other. When called on each element,
+         // store the element in a new variable.
          beforeEach(function(done) {
-            loadFeed(0, done);
-            loadFeed(1, done);
+            loadFeed(0, function() {
+                // get first element.
+                $firstFeed = $(".header-title").html();
+                loadFeed(1, function() {
+                    // get second element.
+                    $secondFeed = $(".header-title").html();
+                    done();
+                });
+            });
          });
 
          // Make sure feed content changes when next feed is loaded.
          it("should change content on load of new feed", function(done) {
-            var $firstFeed = $("#0"),
-                $secondFeed = $("#1");
             expect($firstFeed).not.toEqual($secondFeed);
             done();
          });
